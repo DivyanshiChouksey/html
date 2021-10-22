@@ -1,35 +1,113 @@
-<DOCTYPE html>
-    <html>
-        <head>
-            <title>Calculator </title>
-        </haed>
-        <style>
-           body {background-color:rgb(241, 222, 222)}
-        </style>
-        <body >      
-           <form>
-               <label for ="fname"> CALCULATOR </label><br>
-               <textarea name="message" rows="4%" cols="33%"></textarea><br>
-               <button type="button" style="min-width: 4%;"> C </button> 
-               <button type="button" style="min-width: 4%;"> ~ </button>
-               <button type="button" style="min-width: 4%;"> % </button>
-               <button type="button" style="min-width: 4%;"> /</button><br>
-               <button type="button" style="min-width: 4%;"> 7 </button> 
-               <button type="button" style="min-width: 4%;"> 8 </button>
-               <button type="button" style="min-width: 4%;"> 9 </button>
-               <button type="button" style="min-width: 4%;"> * </button><br>
-               <button type="button" style="min-width: 4%;"> 4 </button>
-               <button type="button" style="min-width: 4%;"> 5 </button>
-               <button type="button" style="min-width: 4%;"> 6 </button>
-               <button type="button" style="min-width: 4%;"> - </button><br>
-               <button type="button" style="min-width: 4%;"> 1 </button>
-               <button type="button" style="min-width: 4%;"> 2 </button>
-               <button type="button" style="min-width: 4%;"> 3 </button>
-               <button type="button" style="min-width: 4%;"> + </button><br>
-               <button type="button" style="min-width: 4%;"> 00 </button>
-               <button type="button" style="min-width: 4%;"> 0 </button>
-               <button type="button" style="min-width: 4%;"> . </button>
-               <button type="button" style="min-width: 4%;"> = </button>
-           </form> 
-        </body>
-    </html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Divyanshi</title>
+  </head>
+  <body style="background-color:rgb(255, 255, 255);">
+    <form name="form1">
+    <div class="container  " style="width: 30%;margin-top: 15%;">
+        <input name="output" id="output"  rows="3" style="width: 100%;"></input>
+        <table style="width: 100%;">
+          <tr>
+            <td>
+              <button type="button" style="width: 100%; background: #000; ;color:aqua;"
+              onclick="form1.output.value='' "> C </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: rgb(17, 16, 16); ;color:aqua"
+              onclick = "form1.output.value += '<-' "> <- </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:aqua;"
+              onclick = "form1.output.value += '%' "> % </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:aqua"
+              onclick = "form1.output.value += '/' "> / </button> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" style="width: 100%; background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '7' "> 7 </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '8' "> 8 </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '9' "> 9 </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:aqua;"
+              onclick = "form1.output.value += '*' "> * </button> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" style="width: 100%; background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '4' "> 4 </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '5' "> 5 </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '6' "> 6 </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:aqua;"
+              onclick = "form1.output.value += '-' "> - </button> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" style="width: 100%; background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '1' "> 1 </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '2' "> 2 </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '3' "> 3 </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:aqua;"
+              onclick = "form1.output.value += '+' "> + </button> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" style="width: 100%; background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '00' "> 00 </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '0' "> 0 </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:#fff;"
+              onclick = "form1.output.value += '.' "> . </button> 
+            </td>
+            <td>
+              <button type="button" style="width: 100%;background: #000; ;color:aqua;"
+              onclick ="form1.output.value =eval(form1.output.value)" > = </button> 
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
